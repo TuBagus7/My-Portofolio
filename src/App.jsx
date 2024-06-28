@@ -1,5 +1,6 @@
 // App.js
 import myPhoto from "../public/img/myprofile.jpg";
+import mySchem from "../public/img/schem.png";
 function App() {
   return (
     <div className="bg-gradient-to-r from-black via-gray-800 to-black min-h-screen">
@@ -38,6 +39,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="bg-gray-800 shadow p-4 rounded">
               <h3 className="text-xl font-bold mb-2">Project 1</h3>
+              <img src={mySchem} alt="schem" />
               <p className="text-gray-300">Description of Project 1.</p>
             </div>
             <div className="bg-gray-800 shadow p-4 rounded">

@@ -12,7 +12,10 @@ function Footer() {
             <span className="ml-3 text-xl">Your Company</span>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a
+              href="../src/App.jsx/"
+              className="text-gray-400 hover:text-white"
+            >
               About
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
