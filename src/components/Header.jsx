@@ -1,10 +1,15 @@
-import { useState } from "react";
+import React from "react";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = React.useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleProfileMenu = () => {
+    setIsProfileMenuOpen(!isProfileMenuOpen);
   };
 
   return (
@@ -21,7 +26,7 @@ function Header() {
                 aria-expanded={isOpen ? "true" : "false"}
                 onClick={toggleMenu}
               >
-                <span className="sr-only">Open main menu</span>
+                {/* <span className="sr-only">Open main menu</span> */}
                 {isOpen ? (
                   <svg
                     className="block h-6 w-6"
@@ -117,16 +122,13 @@ function Header() {
                 </svg>
               </button>
 
-              {/* Profile dropdown */}
               <div className="relative ml-3">
                 <div>
                   <button
                     type="button"
                     className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     id="user-menu-button"
-                    aria-expanded={isOpen ? "true" : "false"}
-                    aria-haspopup="true"
-                    onClick={toggleMenu}
+                    onClick={toggleProfileMenu}
                   >
                     <span className="sr-only">Open user menu</span>
                     <img
@@ -136,7 +138,8 @@ function Header() {
                     />
                   </button>
                 </div>
-                {isOpen && (
+
+                {isProfileMenuOpen && (
                   <div
                     className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                     role="menu"
@@ -170,7 +173,6 @@ function Header() {
             </div>
           </div>
         </div>
-
         {/* Mobile menu */}
         {isOpen && (
           <div className="sm:hidden" id="mobile-menu">

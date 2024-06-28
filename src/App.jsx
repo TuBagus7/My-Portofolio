@@ -18,9 +18,18 @@ function App() {
           />
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-300">
-            Hello! Im a passionate developer with experience in building web
-            applications using React and Tailwind CSS. I love creating beautiful
-            and functional user interfaces.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            sapiente expedita neque, aliquid maiores exercitationem distinctio
+            rem at velit officiis. Vitae eos itaque in iure totam dolorem omnis
+            rerum sit. Consequatur ullam sapiente omnis earum minima accusamus
+            fugit laborum eveniet doloribus quas, rerum aliquid corrupti totam
+            architecto nostrum dignissimos quod. Eos doloribus dolore quo natus
+            consequatur expedita ab consectetur voluptatum perferendis laborum
+            corporis ullam veniam rem, commodi harum dolores laudantium
+            dignissimos quae? Ullam, provident. Quod, suscipit modi! Sapiente
+            sequi in delectus impedit nisi similique consequatur quo cupiditate
+            itaque eius alias, quibusdam exercitationem, libero excepturi cum
+            amet culpa, vitae aperiam facilis.
           </p>
         </section>
 
